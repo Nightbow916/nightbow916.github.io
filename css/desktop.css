@@ -178,6 +178,10 @@ p {
 			width: 32%;
 		}
 		
+	.header .b_menu {
+		display: none;
+	}
+		
 /* banner start */
 
 .banner {
