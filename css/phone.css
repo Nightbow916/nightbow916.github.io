@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	font-family: Arial;	
+	background: url('../images/bg.jpg') repeat;
 }
 
 .full-width {
@@ -224,7 +225,7 @@ p {
 
 .banner {
 	/* padding: 180px 0; */
-	background: #ccc url('../images/banner.jpg') left top no-repeat;
+	background: #ccc url('../images/banner_3.jpg') left top no-repeat;
 	background-size: cover;
 	
 	padding: 120px 0;
