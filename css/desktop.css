@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	font-family: Arial;	
+	background: url('../images/bg.jpg') repeat;
 }
 
 .full-width {
@@ -147,6 +148,7 @@ p {
 
 	.header .logo {
 		float: left;
+		width: 40%;
 	}
 		
 	.header ul {
@@ -186,14 +188,13 @@ p {
 
 .banner {
 	padding: 180px 0;
-	background: #ccc url('../images/banner.jpg') left top no-repeat;
+	background: #ccc url('../images/banner_3.jpg') left center no-repeat; 
 	background-size: cover;
 }
-
-	.banner div {
+	 .banner div {
 		text-align: center;
 		margin-top: 40px;
-	}
+	} 
 
 	.banner h3 {
 	letter-spacing: 1rem;
@@ -401,7 +402,7 @@ p {
 
 .map {
 	background-color: #f4f4f4;
-	padding: 80px 0;
+	padding: 40px 0;
 }
 
 	.map h4 {
@@ -469,22 +470,22 @@ p {
 			color: #306afe;
 		}
 		
-		.map .fixed-width > div:nth-child(2) a:nth-child(2):hover{
-			background: linear-gradient(to top, #FFDC35, #f7f, #9F35FF);
+		.map .fixed-width > div:nth-child(2) a:nth-child(2):hover {
+		   background:linear-gradient(to top, #FFDC35, #f7f, #9F35FF);
 		   background-clip: text;
 		   color: transparent;
 		   transition: color 0.3s;
 		}
 		
-		.map .fixed-width > div:nth-child(2) a:nth-child(3):hover{
+		.map .fixed-width > div:nth-child(2) a:nth-child(3):hover {
 			color: #000;
 		}
 		
-		.map .fixed-width > div:nth-child(2) a:nth-child(4):hover{
+		.map .fixed-width > div:nth-child(2) a:nth-child(4):hover {
 			color: #00DB00;
 		}
 		
-		.map .fixed-width > div:nth-child(2) a:nth-child(5):hover{
+		.map .fixed-width > div:nth-child(2) a:nth-child(5):hover {
 			color: #000;
 		}
 
