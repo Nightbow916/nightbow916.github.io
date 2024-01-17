@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>0926 jQ bxSlider</title>
+
+<link href="jquery.bxslider.css" rel="stylesheet">
+
+<style>
+body {
+	margin: 40px 80px;
+	font-family: century gothic;
+}
+	h1 {
+		font-size: 4rem;
+		font-weight: normal;
+		text-align: right;
+		color: #ff35c4;
+	}
+	
+	h2 {
+		font-weight: normal;
+		color: #56338c;
+		border-top: 3px dashed #999;
+		padding-top: 20px;
+		margin-top: 40px;
+	}
+	
+	.m0 {
+		margin: 0;
+	}
+	
+	.p0 {
+		padding: 0;
+	}
+
+	.pg .bx-pager {
+		bottom: 15px;
+	}
+	
+	.bs_thumbs img {
+		width: 80px;
+	}
+</style>
+
+<script src="jquery-1.12.3.min.js"></script>
+<script src="jquery.bxslider.js"></script>
+
+<script>
+	$('document').ready(function() {
+		$('.bsA').addClass('m0').bxSlider();
+		
+		$('.bsB').addClass('m0 p0').bxSlider({
+			mode: 'fade'
+		});
+		
+		$('.bsC').addClass('m0').bxSlider({
+			auto: true,
+			pause: 5000,
+			controls: false
+		});
+		
+		$('.bsD').addClass('m0').bxSlider({
+			auto: true,
+			controls: false,
+			autoControls: true
+		});
+		
+		$('.bsE').addClass('m0').bxSlider({
+			slideMargin: 4,
+			ticker: true,
+			speed: 60000,
+			tickerHover: true
+		});
+		
+		$('.bsF').addClass('m0').bxSlider();
+		
+		$('.bsG').addClass('m0').bxSlider({
+			captions: true
+		});
+		
+		$('.bsH').addClass('m0').bxSlider({
+			pagerCustom: '.bs_thumbs',
+			controls: false
+		});
+	});
+</script>
+
+</head>
+<body>
+<h1>jQuery bxSlider</h1>
+<h2>eg1.</h2>
+<ul class="bsA">
+	<li><img src="images/bs1.jpg"></li>
+	<li><img src="images/bs2.jpg"></li>
+	<li><img src="images/bs3.jpg"></li>
+	<li><img src="images/bs4.jpg"></li>
+</ul>
+<h2>eg2.</h2>
+<ul class="bsB">
+	<li><img src="images/bs1.jpg"></li>
+	<li><img src="images/bs2.jpg"></li>
+	<li><img src="images/bs3.jpg"></li>
+	<li><img src="images/bs4.jpg"></li>
+</ul>
+<h2>eg3.</h2>
+<ul class="bsC">
+	<li><img src="images/bs1.jpg"></li>
+	<li><img src="images/bs2.jpg"></li>
+	<li><img src="images/bs3.jpg"></li>
+	<li><img src="images/bs4.jpg"></li>
+</ul>
+<h2>eg4.</h2>
+<ul class="bsD">
+	<li><img src="images/bs1.jpg"></li>
+	<li><img src="images/bs2.jpg"></li>
+	<li><img src="images/bs3.jpg"></li>
+	<li><img src="images/bs4.jpg"></li>
+</ul>
+<h2>eg5.</h2>
+<ul class="bsE">
+	<li><img src="images/bs1.jpg"></li>
+	<li><img src="images/bs2.jpg"></li>
+	<li><img src="images/bs3.jpg"></li>
+	<li><img src="images/bs4.jpg"></li>
+</ul>
+<h2>eg6.</h2>
+<div class="pg">
+	<ul class="bsF">
+		<li><img src="images/bs1.jpg"></li>
+		<li><img src="images/bs2.jpg"></li>
+		<li><img src="images/bs3.jpg"></li>
+		<li><img src="images/bs4.jpg"></li>
+	</ul>
+</div>
+<h2>eg7.</h2>
+<ul class="bsG">
+	<li><img src="images/bs1.jpg" title="Sed bibendum nunc vel lorem ultrices, eu sagittis nisi efficitur."></li>
+	<li><img src="images/bs2.jpg" title="Morbi enim dui, porta congue luctus ac, consectetur sit amet risus."></li>
+	<li><img src="images/bs3.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></li>
+	<li><img src="images/bs4.jpg" title="Morbi in purus a nisi hendrerit ullamcorper."></li>
+</ul>
+<h2>eg8.</h2>
+<ul class="bsH">
+	<li><img src="images/bs1.jpg" title="Sed bibendum nunc vel lorem ultrices, eu sagittis nisi efficitur."></li>
+	<li><img src="images/bs2.jpg" title="Morbi enim dui, porta congue luctus ac, consectetur sit amet risus."></li>
+	<li><img src="images/bs3.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></li>
+	<li><img src="images/bs4.jpg" title="Morbi in purus a nisi hendrerit ullamcorper."></li>
+</ul>
+<div class="bs_thumbs">
+	<a data-slide-index="0" href="#"><img src="images/bs1.jpg"></a>
+	<a data-slide-index="1" href="#"><img src="images/bs2.jpg"></a>
+	<a data-slide-index="2" href="#"><img src="images/bs3.jpg"></a>
+	<a data-slide-index="3" href="#"><img src="images/bs4.jpg"></a>
+</div>
+</body>
+</html>
